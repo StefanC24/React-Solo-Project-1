@@ -1,0 +1,13 @@
+.card-link{
+    width: 25%;
+    margin: 20px;
+}
+
+.movie-card{
+    width: 25%;
+    margin: 25px;
+}
+
+.movie-poster{
+    width: 100%;
+}

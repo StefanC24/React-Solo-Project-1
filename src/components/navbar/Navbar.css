@@ -1,0 +1,14 @@
+.navbar{
+
+}
+
+.navbar-links{
+    display: flex;
+    justify-content: center;
+}
+
+li{
+    list-style: none;
+    margin: 0 30px;
+    font-weight: bold;
+}
