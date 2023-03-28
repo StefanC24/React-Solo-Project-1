@@ -4,7 +4,7 @@ import './App.css';
 import MovieList from './components/movies list/MovieList';
 import Navbar from './components/navbar/Navbar';
 import MostRecent from './components/navbar/navLinks/MostRecent';
-import Rating from './components/navbar/navLinks/Rating';
+import TopRated from './components/navbar/navLinks/TopRated';
 import Home from './components/navbar/navLinks/Home';
 import MovieDetails from './components/movie details/MovieDetails'
 
@@ -16,7 +16,7 @@ function App() {
           <Route path='/' element={<MovieList/>} />
           <Route path='movie/:id' element={<MovieDetails/>} />
           <Route path='/' element={<Home />} />
-          <Route path='rating' element={<Rating />} />
+          <Route path='top-rated-movies' element={<TopRated />} />
           <Route path='most-recent' element={<MostRecent />} />
           <Route path='*' element={<Navigate to='/movie' replace/>} />
         </Routes>

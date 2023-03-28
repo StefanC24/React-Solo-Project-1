@@ -12,11 +12,11 @@ function MovieDetails(){
 
     useEffect(() => {
         fetchDetails()
-    });
+    },);
 
     return(
         <div>
-            <img className='movie-poster' src = {movieDetails?.poster_path} alt = {movieDetails?.title} ></img>
+            <img className='movie-poster' src = {`https://image.tmdb.org/t/p/w500/${movieDetails?.poster_path}`} alt = {movieDetails?.title} ></img>
             <p>{movieDetails?.title}</p>
             <p>{movieDetails?.release_date}</p>
             <p>{movieDetails?.vote_average}/10 stars</p>

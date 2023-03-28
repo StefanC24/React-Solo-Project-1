@@ -5,7 +5,7 @@ function Navbar(){
         <div className="navbar">
             <ul className="navbar-links">
                 <li><Link to='/'>Home</Link></li>
-                <li><Link to='/rating'>Rating</Link></li>
+                <li><Link to='/top-rated-movies'>Top Rated Movies</Link></li>
                 <li><Link to='/most-recent'>Most Recent</Link></li>
             </ul>
         </div>
