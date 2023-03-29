@@ -17,7 +17,10 @@ function MovieList(){
 
     return (
         <div className='movies-container'>
-            {movie?.map(item => <MovieCard {...item}/>)}
+            <h1>Most popular</h1>
+            <div className='cards-container'>
+                {movie?.map(item => <MovieCard {...item}/>)}
+            </div>
         </div>
     )
 }
