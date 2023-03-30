@@ -1,0 +1,16 @@
+.card-details-container{
+    display: flex;
+    justify-content: center;
+
+}
+
+.cards-details{
+    width: 85%;
+    text-align: center;
+}
+
+.details-movie-poster{
+    width: 55%;
+    min-width: 200px;
+    max-width: 400px;
+}

@@ -1,6 +1,8 @@
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 import {useParams} from 'react-router-dom'
+import './MovieDetails.css'
+
 function MovieDetails(){
     const {id} = useParams()
     const [movieDetails, setMovieDetails] = useState()
@@ -15,11 +17,14 @@ function MovieDetails(){
     },);
 
     return(
-        <div>
-            <img className='movie-poster' src = {`https://image.tmdb.org/t/p/w500/${movieDetails?.poster_path}`} alt = {movieDetails?.title} ></img>
-            <p>{movieDetails?.title}</p>
-            <p>{movieDetails?.release_date}</p>
-            <p>{movieDetails?.vote_average}/10 stars</p>
+         <div className='card-details-container'>   
+            <div className='cards-details'>
+                <img className='details-movie-poster' src = {`https://image.tmdb.org/t/p/w500/${movieDetails?.poster_path}`} alt = {movieDetails?.title} ></img>
+                <p>{movieDetails?.title}</p>
+                <p>{movieDetails?.release_date}</p>
+                <p>{movieDetails?.vote_average}/10 stars</p>
+                <p>{movieDetails?.overview}</p>
+            </div>
         </div>
     )
 }
