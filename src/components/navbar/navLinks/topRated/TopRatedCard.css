@@ -1,0 +1,12 @@
+.movie_rating{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: rgb(190, 92, 92);
+    color: azure;
+    font-weight: bold;
+    transform: translate(20px, -40px);
+}

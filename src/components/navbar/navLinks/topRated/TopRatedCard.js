@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import './TopRatedCard.css'
 
 function TopRatedCard(props){
     return(
@@ -7,6 +8,7 @@ function TopRatedCard(props){
                     src = {`https://image.tmdb.org/t/p/w500/${props.poster_path}`} 
                     alt = {props.title} >
                     </img>
+                <p className="movie_rating">{props.vote_average}</p>
                 <p>{props.title}</p>
         </Link>
     )

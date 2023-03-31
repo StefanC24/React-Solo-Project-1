@@ -3,10 +3,11 @@ import {Routes, Route, Navigate} from 'react-router-dom'
 import './App.css';
 import MovieList from './components/movies list/MovieList';
 import Navbar from './components/navbar/Navbar';
-import MostRecent from './components/navbar/navLinks/MostRecent';
-import TopRatedList from './components/navbar/navLinks/TopRatedList';
+import MostRecentList from './components/navbar/navLinks/mostRecent/MostRecentList';
+import TopRatedList from './components/navbar/navLinks/topRated/TopRatedList';
 import Home from './components/navbar/navLinks/Home';
 import MovieDetails from './components/movie details/MovieDetails'
+import Footer from './footer/Footer';
 
 function App() {
   return (
@@ -17,9 +18,10 @@ function App() {
           <Route path='movie/:id' element={<MovieDetails/>} />
           <Route path='/' element={<Home />} />
           <Route path='top-rated-movies' element={<TopRatedList />} />
-          <Route path='most-recent' element={<MostRecent />} />
+          <Route path='most-recent' element={<MostRecentList />} />
           <Route path='*' element={<Navigate to='/movie' replace/>} />
         </Routes>
+        <Footer/>
     </div>
   );
 }
