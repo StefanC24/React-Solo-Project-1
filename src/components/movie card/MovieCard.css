@@ -16,9 +16,11 @@
 
 .movie-title{
     text-decoration: none;
+    flex-shrink: 1;
     color: rgb(116, 49, 49);
     font-weight: bold;
-    font-size: 2vw;
+    /* margin: 0; */
+    /* font-size: 2vw; */
 }
 a{
     text-decoration: none;
