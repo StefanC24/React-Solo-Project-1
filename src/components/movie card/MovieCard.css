@@ -4,8 +4,8 @@
     min-width: 100px;
     border-radius:  20px;
     margin: 20px;
-    box-shadow: 0px 0px 10px;
-    background-color: rgb(169, 197, 224);
+    box-shadow: 0px 0px 10px rgb(126, 79, 9);
+    background-color: rgb(249, 153, 10);
 }
 
 .movie-poster{
@@ -15,12 +15,8 @@
 }
 
 .movie-title{
-    text-decoration: none;
-    flex-shrink: 1;
-    color: rgb(116, 49, 49);
+    color: rgb(35, 34, 34);
     font-weight: bold;
-    /* margin: 0; */
-    /* font-size: 2vw; */
 }
 a{
     text-decoration: none;
