@@ -8,7 +8,7 @@ function TopRatedCard(props){
                 src = {`https://image.tmdb.org/t/p/w500/${props.poster_path}`} 
                 alt = {props.title} >
                 </img>
-            <p className="movie_rating">{props.vote_average}</p>
+            <p className="movie-rating">{props.vote_average}</p>
             <p className ='movie-title'>{props.title}</p>
         </Link>
     )
