@@ -14,3 +14,24 @@
     min-width: 200px;
     max-width: 400px;
 }
+
+.details-movie-poster{
+    margin-top: 50px;
+}
+
+.details-movie-title{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.details-release-date{
+    color: rgb(255, 255, 255);
+}
+
+.details-rating{
+    color: rgb(248, 205, 11);
+}
+
+.overview{
+    color: rgb(255, 255, 255);
+}
