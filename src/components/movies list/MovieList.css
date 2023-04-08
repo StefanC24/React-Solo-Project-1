@@ -9,3 +9,17 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
+.header{
+    color: rgb(249, 153, 10);
+}
+
+.button{
+    margin: 5px;
+    padding: 3px;
+    border: none;
+    width: 5em;
+    height: 3em;
+    border-radius: 50%;
+    background-color:rgb(80, 147, 107);
+}

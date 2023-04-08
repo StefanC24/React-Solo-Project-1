@@ -17,10 +17,18 @@ function TopRatedList(){
 
     return(
         <div className="movies-container">
-            <h1>Top Rated Movies</h1>
+            <h1 className='header'>Top Rated Movies</h1>
+            <div className='buttons-container'>
+                <button className='previous-button button' >Previous</button>
+                <button className='next-button button'>Next</button>
+            </div>  
             <div className="cards-container">
                 {movieCard?.map(items => <TopRatedCard {...items}/>)}
             </div>
+            <div className='buttons-container'>
+                <button className='previous-button button' >Previous</button>
+                <button className='next-button button'>Next</button>
+            </div>  
         </div>
     )
 }

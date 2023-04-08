@@ -35,12 +35,18 @@ function MovieList(){
 
     return (
         <div className='movies-container'>
-            <h1>Most popular</h1>
-            <button onClick={() => changePage(currentPage, 'previous')}>Previous</button>
-            <button onClick={() =>  changePage(currentPage, 'next')}>Next</button>
+            <h1 className='header'>Most popular</h1>
+            <div className='buttons-container'>
+                <button className='previous-button button' onClick={() => changePage(currentPage, 'previous')}>Previous</button>
+                <button className='next-button button' onClick={() =>  changePage(currentPage, 'next')}>Next</button>
+            </div>  
             <div className='cards-container'>
                 {movie?.map(item => <MovieCard {...item}/>)}
             </div>
+            <div className='buttons-container'>
+                <button className='previous-button button' onClick={() => changePage(currentPage, 'previous')}>Previous</button>
+                <button className='next-button button' onClick={() =>  changePage(currentPage, 'next')}>Next</button>
+            </div>  
         </div>
     )
 }
