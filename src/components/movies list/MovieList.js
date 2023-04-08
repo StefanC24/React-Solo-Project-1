@@ -7,13 +7,11 @@ function MovieList(){
     const [movie, setMovie] = React.useState()
     const [currentPage, setCurrentPage] = React.useState(1)
   
-    React.useEffect(()=>
-        fetchMovies(1)
-    , [])
+    React.useEffect(()=>fetchMovies(1),[]);
 
     
     const fetchMovies = (currentPageNumber) => {
-        axios.get('https://api.themoviedb.org/3/movie/popular?api_key=dc0fb7b28045cd04916b73e857aec4f9')
+        axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=dc0fb7b28045cd04916b73e857aec4f9&page=${currentPageNumber}`)
         .then(response => 
             setMovie(response.data.results))
             setCurrentPage(currentPageNumber)

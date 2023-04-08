@@ -24,7 +24,7 @@ function MostRecentList(){
         <div className="movies-container">
             <h1>Most recent films</h1>
             <div className="cards-container">
-               {mostRecentFilm?.map(item => <MostRecentCard {...item}/>)}
+               {mostRecentFilm?.map(item => <MostRecentCard {...item} />)}
             </div>
         </div>
     )
