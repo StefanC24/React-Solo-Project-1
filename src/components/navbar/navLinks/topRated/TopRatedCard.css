@@ -1,4 +1,4 @@
-.movie_rating{
+.movie-rating{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,30 +6,7 @@
     height: 40px;
     border-radius: 30px;
     background-color: rgb(190, 92, 92);
-    color: azure;
+    color: rgb(235, 202, 114);
     font-weight: bold;
     transform: translate(20px, -40px);
-}
-
-.top-rated-card-link{
-    width: 25%;
-    max-width: 300px;
-    min-width: 100px;
-    border-radius:  20px;
-    margin: 20px;
-    box-shadow: 0px 0px 10px;
-    background-color: rgb(169, 197, 224);
-}
-
-.top-rated-movie-poster{
-    width: 100%;
-    max-width: 300px;
-    border-radius: 19px 19px 0 0;
-}
-
-.top-rated-movie-title{
-    text-decoration: none;
-    color: rgb(116, 49, 49);
-    font-weight: bold;
-    /* font-size: 2vw; */
 }
