@@ -6,7 +6,34 @@
     height: 40px;
     border-radius: 30px;
     background-color: rgb(50, 83, 23);
-    color: rgb(255, 251, 240);
+    color: rgb(245, 202, 84);
     font-weight: bold;
     transform: translate(20px, -40px);
+}
+
+@media only screen and (max-width: 1024px){
+    .movie-rating{
+        width: 8vw;
+        height: 4vw;
+        font-size: 0.8em;
+        transform: translate(10px, -95%);
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .movie-rating{        
+        width: 10vw;
+        height: 5vw;
+        font-size: 0.8em;
+        transform: translate(10px, -95%);
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .movie-rating{        
+        width: 10vw;
+        height: 5vw;
+        font-size: 0.8em;
+        transform: translate(10px, -140%);
+    }
 }

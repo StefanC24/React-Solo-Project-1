@@ -21,3 +21,39 @@
 a{
     text-decoration: none;
 }
+
+@media only screen and (max-width: 1024px){
+    .card-link{
+        width: 35%;
+        max-width: 250px;
+        min-width: 100px;
+        border-radius:  20px;
+        margin: 20px 5px;
+        box-shadow: 0px 0px 10px rgb(126, 79, 9);
+        background-color: rgb(249, 153, 10);
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .card-link{
+        width: 30%;
+        max-width: 300px;
+        min-width: 100px;
+        border-radius:  20px;
+        margin: 20px 10px;
+        box-shadow: 0px 0px 10px rgb(126, 79, 9);
+        background-color: rgb(249, 153, 10);
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .card-link{
+        width: 40%;
+        max-width: 300px;
+        min-width: 100px;
+        border-radius:  20px;
+        margin: 20px 10px;
+        box-shadow: 0px 0px 10px rgb(126, 79, 9);
+        background-color: rgb(249, 153, 10);
+    }
+}
