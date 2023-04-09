@@ -22,7 +22,7 @@ function MostRecentList(){
 
     return(
         <div className="movies-container">
-            <h1>Most recent films</h1>
+            <h1 className="header">Most recent films</h1>
             <div className="cards-container">
                {mostRecentFilm?.map(item => <MostRecentCard {...item} />)}
             </div>
