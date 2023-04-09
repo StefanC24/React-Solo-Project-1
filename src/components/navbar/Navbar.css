@@ -5,6 +5,10 @@
     background-color: rgb(249, 153, 10);
 }
 
+.logo{
+    width: 15vw;
+}
+
 .navbar-links{
     display: flex;
 }
