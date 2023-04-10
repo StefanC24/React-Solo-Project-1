@@ -1,6 +1,8 @@
 import './MovieCard.css'
 import { Link } from 'react-router-dom';
 
+// Great us of props but the component folder name should be like the following:
+// MovieCard instead of movie card
 function MovieCard(props){
     return(
         <Link className="card-link" to={`/movie/${props.id}`}>   

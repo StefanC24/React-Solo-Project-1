@@ -12,6 +12,7 @@ function MovieDetails(){
             .then(response => setMovieDetails(response.data))
     }
 
+    // TODO: This should have an empty array after the comma as we only want it to run on page load
     useEffect(() => {
         fetchDetails()
     },);
@@ -19,7 +20,9 @@ function MovieDetails(){
     return(
          <div className='card-details-container'>   
             <div className='cards-details'>
+                {/* TODO: Break these attributes onto new lines in order to improve readability */}
                 <img className='details-movie-poster' src = {`https://image.tmdb.org/t/p/w500/${movieDetails?.poster_path}`} alt = {movieDetails?.title} ></img>
+                {/* TODO: Remove the empty space before and after the className */}
                 <p className = 'details-movie-title'>{movieDetails?.title}</p>
                 <p className = 'details-release-date'>{movieDetails?.release_date}</p>
                 <p className = 'details-rating'>{movieDetails?.vote_average}/10 stars</p>

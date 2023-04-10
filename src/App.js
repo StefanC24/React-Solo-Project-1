@@ -16,6 +16,7 @@ function App() {
         <Routes>
           <Route path='/' element={<MovieList/>} />
           <Route path='movie/:id' element={<MovieDetails/>} />
+          {/* TODO: this import here is not needed */}
           <Route path='/' element={<Home />} />
           <Route path='top-rated-movies' element={<TopRatedList />} />
           <Route path='most-recent' element={<MostRecentList />} />

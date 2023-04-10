@@ -4,6 +4,7 @@ import MovieCard from '../movie card/MovieCard'
 import './MovieList.css'
 function MovieList(){
 
+    // This should be movies and setMovies as there will be always more than one movie in the array
     const [movie, setMovie] = React.useState()
     const [currentPage, setCurrentPage] = React.useState(1)
   
@@ -17,6 +18,7 @@ function MovieList(){
             setCurrentPage(currentPageNumber)
     }
     
+    // Great setup of the change page function
     const changePage = (currentPageNumber, direction) => {
        if(currentPageNumber === 1 && direction === 'previous'){
         return

@@ -6,6 +6,7 @@ function MostRecentList(){
 
     const [mostRecentFilm, setMostRecentFilm] = useState();    
 
+    // Great setup to order the most recent films
     const fetchMostRecent = () => {
         axios.get('https://api.themoviedb.org/3/movie/popular?api_key=dc0fb7b28045cd04916b73e857aec4f9')
             .then(response => {

@@ -4,6 +4,7 @@ function Navbar(){
     return(
         <div className="navbar">
             <Link to={'/'}>
+                {/* Good use of importing the logos for the page */}
                 <img className='logo' src='logos/MovieCatalogue-logos_black.png' alt=''></img>
             </Link>
             <ul className="navbar-links">

@@ -11,6 +11,9 @@ function TopRatedList(){
         fetchMovieCard(1)
     },[])
 
+    // TODO: The top rated and most recent pages are inside the navbar folder
+    // they should be in the components folder or as a further improvement could 
+    // be to make a folder for pages and store them there
     const handleClick = (currentPageNumber, direction) => {
         if(currentPageNumber === 1 && direction === 'previous'){
             return
