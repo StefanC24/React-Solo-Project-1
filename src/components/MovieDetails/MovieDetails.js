@@ -14,16 +14,18 @@ function MovieDetails(){
 
     useEffect(() => {
         fetchDetails()
-    },);
+    },[]);
 
     return(
          <div className='card-details-container'>   
             <div className='cards-details'>
-                <img className='details-movie-poster' src = {`https://image.tmdb.org/t/p/w500/${movieDetails?.poster_path}`} alt = {movieDetails?.title} ></img>
-                <p className = 'details-movie-title'>{movieDetails?.title}</p>
-                <p className = 'details-release-date'>{movieDetails?.release_date}</p>
-                <p className = 'details-rating'>{movieDetails?.vote_average}/10 stars</p>
-                <p className = 'overview'>{movieDetails?.overview}</p>
+                <img className='details-movie-poster' 
+                    src={`https://image.tmdb.org/t/p/w500/${movieDetails?.poster_path}`} 
+                    alt = {movieDetails?.title} ></img>
+                <p className='details-movie-title'>{movieDetails?.title}</p>
+                <p className='details-release-date'>{movieDetails?.release_date}</p>
+                <p className='details-rating'>{movieDetails?.vote_average}/10 stars</p>
+                <p className='overview'>{movieDetails?.overview}</p>
             </div>
         </div>
     )

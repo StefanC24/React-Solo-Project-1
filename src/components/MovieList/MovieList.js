@@ -1,10 +1,10 @@
 import React from 'react'
 import axios from 'axios'
-import MovieCard from '../movie card/MovieCard'
+import MovieCard from '../MovieCard/MovieCard'
 import './MovieList.css'
 function MovieList(){
 
-    const [movie, setMovie] = React.useState()
+    const [movies, setMovies] = React.useState()
     const [currentPage, setCurrentPage] = React.useState(1)
   
     React.useEffect(()=>fetchMovies(1),[]);
@@ -13,7 +13,7 @@ function MovieList(){
     const fetchMovies = (currentPageNumber) => {
         axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=dc0fb7b28045cd04916b73e857aec4f9&page=${currentPageNumber}`)
         .then(response => 
-            setMovie(response.data.results))
+            setMovies(response.data.results))
             setCurrentPage(currentPageNumber)
     }
     
@@ -39,7 +39,7 @@ function MovieList(){
                 <button className='next-button button' onClick={() =>  changePage(currentPage, 'next')}>Next</button>
             </div>  
             <div className='cards-container'>
-                {movie?.map(item => <MovieCard {...item}/>)}
+                {movies?.map(item => <MovieCard {...item}/>)}
             </div>
             <div className='buttons-container'>
                 <button className='previous-button button' onClick={() => changePage(currentPage, 'previous')}>Previous</button>
