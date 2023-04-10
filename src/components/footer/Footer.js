@@ -1,5 +1,6 @@
 import './Footer.css'
 
+// TODO: This should be within the components folder
 function Footer(){
     return(
         <div className='footer-container'>
