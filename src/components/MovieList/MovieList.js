@@ -6,6 +6,7 @@ function MovieList(){
 
     const [movies, setMovies] = React.useState()
     const [currentPage, setCurrentPage] = React.useState(1)
+    const [input, setInput] = React.useState("")
   
     React.useEffect(()=>fetchMovies(1),[]);
 
@@ -30,10 +31,10 @@ function MovieList(){
        }
     }
 
-
     return (
         <div className='movies-container'>
             <h1 className='header'>Most popular</h1>
+            <input onChange={(event)=>setInput(event.target.value)} type='text'placeholder='Search'></input>
             <div className='buttons-container'>
                 <button className='previous-button button' onClick={() => changePage(currentPage, 'previous')}>Previous</button>
                 <button className='next-button button' onClick={() =>  changePage(currentPage, 'next')}>Next</button>

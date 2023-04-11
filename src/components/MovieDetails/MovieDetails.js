@@ -14,8 +14,9 @@ function MovieDetails(){
 
     useEffect(() => {
         fetchDetails()
-        // eslint-disable-next-line
-    },[movieDetails]);
+        console.log("render")
+      // eslint-disable-next-line 
+    },[]);
 
     return(
          <div className='card-details-container'>   
