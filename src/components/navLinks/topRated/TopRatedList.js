@@ -6,14 +6,11 @@ function TopRatedList(){
 
     const [movieCard, setMovieCard] = useState();
     const [currentPage, setCurrentPage] = useState(1)
+    const [input, setInput] = useState('')
 
     useEffect(() => {
         fetchMovieCard(1)
     },[])
-
-    // TODO: The top rated and most recent pages are inside the navbar folder
-    // they should be in the components folder or as a further improvement could 
-    // be to make a folder for pages and store them there
     const handleClick = (currentPageNumber, direction) => {
         if(currentPageNumber === 1 && direction === 'previous'){
             return
@@ -38,12 +35,15 @@ function TopRatedList(){
     return(
         <div className="movies-container">
             <h1 className='header'>Top Rated</h1>
+            <input onChange={(e) => setInput(e.target.value)} className="search" placeholder="Search"></input>
             <div className='buttons-container'>
                 <button className='previous-button button' onClick={() => handleClick(currentPage, 'previous')} >Previous</button>
                 <button className='next-button button' onClick={() => handleClick(currentPage, 'next')}>Next</button>
             </div>  
             <div className="cards-container">
-                {movieCard?.map(items => <TopRatedCard {...items}/>)}
+                {movieCard?.filter(item=>{
+                    return input.toLocaleLowerCase() === "" ? item : item.title.toLowerCase().includes(input)
+                }).map(items => <TopRatedCard {...items}/>)}
             </div>
             <div className='buttons-container'>
                 <button className='previous-button button' onClick={() => handleClick(currentPage, 'previous')} >Previous</button>
