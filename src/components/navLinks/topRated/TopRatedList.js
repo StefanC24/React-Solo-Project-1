@@ -34,8 +34,8 @@ function TopRatedList(){
 
     return(
         <div className="movies-container">
-            <h1 className='header'>Top Rated</h1>
             <input onChange={(e) => setInput(e.target.value)} className="search" placeholder="Search"></input>
+            <h1 className='header'>Top Rated</h1>
             <div className='buttons-container'>
                 <button className='previous-button button' onClick={() => handleClick(currentPage, 'previous')} >Previous</button>
                 <button className='next-button button' onClick={() => handleClick(currentPage, 'next')}>Next</button>
