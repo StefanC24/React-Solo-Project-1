@@ -36,3 +36,18 @@
     width: 30%;
     color: rgb(173, 134, 82);
 }
+
+@media screen and (max-width: 800px) {
+    
+    .cards-details{
+        flex-direction: column;
+    }
+    
+    .details-movie-poster{
+        width: 40%;
+    }
+    
+    .overview{
+        width: 70%;
+    }   
+}
