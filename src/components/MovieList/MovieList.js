@@ -43,8 +43,10 @@ function MovieList(){
                 {movies?.filter((item)=>{
                     return input.toLowerCase() === "" 
                     ? 
-                    item : item.title.toLowerCase().includes(input)
-                }).map(item => <MovieCard {...item} />)}
+                    item 
+                    :
+                    item.title.toLowerCase().includes(input.toLowerCase())
+                }).map(item => <MovieCard {...item} key={movies.id}/>)}
             </div>
             <div className='buttons-container'>
                 <button className='previous-button button' onClick={() => changePage(currentPage, 'previous')}>Previous</button>

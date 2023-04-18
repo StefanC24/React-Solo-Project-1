@@ -14,7 +14,6 @@ function MovieDetails(){
 
     useEffect(() => {
         fetchDetails()
-        console.log("render")
       // eslint-disable-next-line 
     },[]);
 
